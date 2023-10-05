@@ -1,0 +1,77 @@
+main {
+    width: 90%;
+    margin: auto;
+}
+* {
+    transition-duration: .2s;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    text-align: center;
+}
+
+#foreword {
+    min-height: 100vh;
+    text-align: center;
+    font-size: 3em;
+}
+
+#fanclub {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    column-gap: 32px;
+}
+
+
+#almost-thirteen-reasons-why {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    & li {
+        height: fit-content;
+        padding: 8px;
+
+        &:not(.no-restriction) {
+            max-width: 300px;
+
+            & img {
+                max-height: 200px;
+            }
+        }
+        text-align: center;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+        & p {
+            overflow-wrap: break-word;
+        }
+    }
+}
+
+.form-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 8px;
+    margin-bottom: 16px;
+
+    &:last-of-type {
+        grid-template-columns: 100%;
+    }
+}
+
+.legal-warning {
+    font-size: 0.8em;
+}
+
+u {
+    text-decoration: line-through;
+}
